@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Card Flip Testing</title>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+    <style>
+        .container {
+            width: 900px;
+            height: 450px;
+            position: relative;
+            /* border: 1px solid #ccc; */
+            -webkit-perspective: 800px;
+            -moz-perspective: 800px;
+            -o-perspective: 800px;
+            perspective: 800px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            -webkit-transition: -webkit-transform 1s;
+            -moz-transition: -moz-transform 1s;
+            -o-transition: -o-transform 1s;
+            transition: transform 1s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transform-origin: 50% 50%;
+        }
+        .card div {
+            display: block;
+            height: 100%;
+            width: 100%;
+            /* line-height: 260px; */
+            color: black;
+            /* text-align: center; */
+            font-size: 20px;
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .card .front {
+            background: green;
+        }
+        .card .back {
+            background: blue;
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -o-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+        }
+        .card.flipped {
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -o-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Card Flip Testing</h2>
+
+    <section class="container">
+        <div class="card">
+            <div class="front text-center">
+                <input type="text" id="data-entry"/> 
+                <button onclick="flip()">search</button>
+            </div>
+            <div class="back">
+                    <div class="back">
+                            <div class="row">
+                                <h1>FLIPPED!</h5>
+                            </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        console.log("Flip Testing . .  .");
+        function flip() {
+            $('.card').toggleClass('flipped');
+            var countryCode = document.getElementById("data-entry").value;
+            //alert(countryCode);
+            //$(".back").text("");
+            $(".back").prepend(countryCode);
+           // $(".back").append("<button onclick=" + flip() ">back</button>");
+        }
+    //event.preventDefault();
+    //var z = $("#card").flip({
+    //axis: 'x',
+    //trigger: 'click',
+    //});
+    //$("#theQuery").on("click", function() {
+    //    $("#card").flip();
+    //});
+    </script>
+
+</body>
+
+</html>

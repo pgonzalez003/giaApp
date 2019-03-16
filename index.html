@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>        
+    </head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans333:200|Raleway:300|Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="replaceNav">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-globe-africa"></i> GIA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle"  href="#" id="myPlacesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  My Places
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"></a>
+                  <a class="dropdown-item" href="#"></a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"></a>
+                </div>
+              </li>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Explore" aria-label="search">
+            <button class="btn btnQuery btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="firstNav">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-globe-africa"></i> GIA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      My Places
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#"></a>
+                      <a class="dropdown-item" href="#"></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"></a>
+                    </div>
+                  </li>
+               
+              </ul>
+              
+            </div>
+          </nav>
+
+
+<div class="container text-center mt-4" id="frontOfCard">
+    <div class="frontContent p-5">
+    <div class="row">
+        <div class="col">
+            <img id="imgLogo" src="images/logo.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+                <input type="text" placeholder="Explore" id="query"> 
+                <button class="btnQuery btn"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="container mt-4" id="backOfCard">
+    <div class="backContent p-5" id="backContent">
+        <div class="row">
+            <div class="col-lg-5">
+                <h1 id="country"></h1>
+                <br>
+                <h4>Language</h4><p id="language"></p>
+                <br>
+                <h4>Head of State</h4><p id="headOfState"></p>
+                <br>
+                <h4>Religion</h4><p id="religion"></p>
+                <br>
+            
+            </div>
+            <div class="col-lg-5">
+                <span id="flag"></span>
+                <br>
+                <h4>Weather</h4><p id="weather">Upgrade to Pro for Weather!</p>
+                <br>
+                <h4>Time Zone</h4><p id="timeZone"></p>
+                <br>
+                <h4>Travel Advisories</h4><p id="travelAdvisories"></p>
+                <br>
+                
+            </div>
+            <div class="col-lg-2 text-center">
+            <h5>Further Research</h5>
+            <br>
+            <button id="encyclopedia"><h3><i class="fas fa-atlas"></i></h3></button>
+            <br>
+            <button id="wikipedia"><h3 id=""><i class="fab fa-wikipedia-w"></i></h3></button>
+            <br>
+            <button class='btn' id="checkInBtn"><i class="fas fa-map-marker-alt"></i>
+
+                 Check In</button><p id="checkIns"></p><br>
+            <button class='btn' id="myPlacesBtn"><i class="fas fa-map-pin"></i> 
+                
+
+                My Places</button><br>
+            </div>
+
+        </div>
+    </div>
+</div>
+       
+     
+
+
+<br><br>
+
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-lg">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Top Headlines
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span id="news"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Political Structure
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span id="moreInfoTwo"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>      -->
+
+   
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="assets/javascript.js"></script>
+    <script src="assets/jp.js"></script>
+
+
+
+</body>
+</html>

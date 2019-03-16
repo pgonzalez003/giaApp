@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>        
+    </head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+    img {
+        width: 500px;
+        padding-top: 10px;
+    }
+    #card {
+        width: 75vw;
+        height: 25vw;
+        position: relative;
+
+        border-radius: 20px;
+    }
+    .front {
+        background: rgb(250, 251, 252);
+        border-radius: 20px;
+        border-color: rgb(59, 58, 58);
+    }
+
+    .back {
+        background: rgb(86, 240, 150);
+        border-radius: 20px;
+
+    }
+    #backSide {
+        padding: 10px;
+        margin-block-start: 10px;
+        margin-block-end: 10px;
+        border: solid;
+        border-color: black;
+    }
+
+    #frontCol {
+        border: none;
+    }
+
+    .back .row {
+        padding-left: 25px;
+    }
+
+    
+    </style>
+<body>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="card"> 
+                    <div class="front"> 
+                        <div class="row">
+                            <div class="col-lg-3" id="frontCol"></div>
+                            <div class="col-lg-6">
+                                <img src="images/logo.png">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search-location"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3" id="frontCol"></div>
+                        </div>    
+                    </div> 
+                    <div class="back">
+                       <div class="row">
+                           <div class="col-lg-1" id="backSide">
+                               <h5>Country</h5>
+                           </div>
+                           <div class="col-lg-3" id="backSide">
+                               <span id="country"></span>
+                           </div>
+                           <div class="col-lg-1" id="backSide">
+                               <h5>Flag</h5>
+                           </div>
+                           <div class="col-lg-3" id="backSide">
+                               <span id="flag"></span>
+                           </div>
+                       </div>
+                       <div class="row">
+                            <div class="col-lg-2" id="backSide">
+                                <h5>Language</h5>
+                            </div>
+                            <div class="col-lg-3" id="backSide">
+                                <span id="language"></span>
+                            </div>
+                            <div class="col-lg-1" id="backSide">
+                                <h5>Weather</h5>
+                            </div>
+                            <div class="col-lg-3" id="backSide">
+                                <span id="weather"></span>
+                            </div>
+                       </div>
+                       <div class="row">
+                            <div class="col-lg-2" id="backSide">
+                                <h5>Head of State</h5>
+                            </div>
+                            <div class="col-lg-3" id="backSide">
+                                <span id="headOfState"></span>
+                            </div>
+                            <div class="col-lg-1" id="backSide">
+                                <h5>Currency</h5>
+                            </div>
+                            <div class="col-lg-3" id="backSide">
+                                <span id="currency"></span>
+                            </div>
+                       </div>
+                       <div class="row">
+                            <div class="col-lg-1" id="backSide">
+                                <h5>Politics</h5>
+                            </div>
+                            <div class="col-lg-3" id="backSide">
+                                <span id="politics"></span>
+                            </div>
+                            <div class="col-lg-3" id="backSide">
+                                <h5>Travel Requirements</h5>
+                            </div>
+                            <div class="col-lg-3" id="backSide">
+                                <span id="travelRequirements"></span>
+                            </div>
+                       </div>
+                       <div class="row">
+                            <div class="col-lg-1" id="backSide">
+                                <h5>Religion</h5>
+                            </div>
+                            <div class="col-lg-3" id="backSide">
+                                <span id="religion"></span>
+                            </div>
+                            <div class="col-lg-2" id="backSide">
+                                <h5>Travel Advisories</h5>
+                            </div>
+                            <div class="col-lg-3" id="backSide">
+                                <span id="flag"></span>
+                            </div>
+                       </div>
+                    </div> 
+            </div>
+        </div>
+    </div>
+</div>  
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script>
+        $("#card").flip();
+    </script>
+</body>
+</html>
